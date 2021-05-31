@@ -6,7 +6,7 @@
 /*   By: shirama <shirama@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 19:22:14 by shirama           #+#    #+#             */
-/*   Updated: 2021/05/30 22:39:33 by shirama          ###   ########.fr       */
+/*   Updated: 2021/05/31 22:28:18 by shirama          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	recieve_sucess(int sig, siginfo_t *info, void *context)
 	(void)sig;
 	(void)info;
 	(void)context;
-	write(1, "Message has been sent\n", 22);
+	ft_putstr_fd("Message has been sent\n", 1);
 }
 
 void	send_message(pid_t pid, char c)
